@@ -28,3 +28,18 @@ input,
 #phone-number {
     margin: .4rem 0;
 }
+
+#kobe {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+#kobe-img {
+
+    width: 100px;
+
+}
