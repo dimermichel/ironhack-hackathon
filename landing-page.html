@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT - Hackathon</title>
+    <!-- ADD JQUERY CDN - BOOTSTRAP IS DEPENDENT ON IT SO HAS TO BE LOADED FIRST -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+​
+    <!-- ADD POPPER CDN - BOOTSTRAP IS DEPENDENT ON IT SO HAS TO BE LOADED FIRST -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+​
+    <!-- ADD BOOTSTRAP CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+​
+    <!-- ADD BOOTSTRAP JS CDN -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+​
+    <!-- YOUR STYLES COME LAST SINCE YOU DON'T WANT IT TO BE OVERWRITTEN WITH THE BOOTSTRAP CSS -->
+</head>
+<body>
+    <ul id="nav-bar" class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><b>Booki</b></a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#">Book</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#">Text Book</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+            <img src="http://res.cloudinary.com/dimermichel/image/upload/w_240,h_240,c_thumb,g_face,r_max/v1582078458/ironhackProject2/big-chungus.png.png" alt="profile pic">
+        </li>
+    </ul>
+    <div id="inside">
+
+
+    <div class="row">
+        <aside class="col-sm-4">
+            
+            <div class="card">
+                <article class="card-body">
+                    <h4 class="card-title mb-4 mt-1">Shipping Address</h4>
+                    <form>
+                        <div class="form-group">
+                            
+                            <input name="country" class="form-control" placeholder="Country" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input name="firstName" class="form-control" placeholder="First Name" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input name="lastName" class="form-control" placeholder="Last Name" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input name="streetAddress" class="form-control" placeholder="Street Address" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input name="city" class="form-control" placeholder="City" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input name="state" class="form-control" placeholder="State" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input name="zipCode" class="form-control" placeholder="Zip Code" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <input id="phone-number" name="phoneNumber" class="form-control" placeholder="Phone Number" type="tel" pattern=“[0-9]{3}-[0-9]{3}-[0-9]{4}” required>
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            
+                            <label>Payment Method</label>
+                        </div> 
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                PayPal
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Credit Card
+                            </label>
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                        </div> <!-- form-group// -->                                                           
+                    </form>
+                </article>
+            </div> <!-- card.// -->
+            
+        </aside> <!-- col.// -->
+        <!-- ===================================================================== This is the second card-->
+        
+        <aside class="col-sm-4">
+            
+            
+            <div class="card">
+                <article class="card-body">
+                    <div>
+                        <h4 class="card-title text-center mb-4 mt-1">Order Summary</h4>
+                    </div>
+                    <div>
+                        <div><p class="">Subtotal (1 Item)</p></div>    
+                        <div><p class="">$21.00</p></div>
+                    </div>
+                    <div>
+                        <img src="images/kobe.png" alt="">
+                        <p>The Mamba Mentality: How I Play</p>
+                        <p>By Kobe Bryant</p>
+                        <p>Andrew D. Bernstein</p>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Shipping</p>
+                        </div>
+                        <div>
+                            <p>$4.99</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Estimated Tax</p>
+                        </div>
+                        <div>
+                            <p>$1.36</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Order Total:</h3>
+                        </div>
+                        <div>
+                            <h4>$27.35</h4>
+                        </div>
+                    </div>
+                    <form>
+                        
+                        <div class="form-group">
+                            
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Continue
+                            </button>
+                        </div> <!-- form-group// -->
+                    </form>
+                </article>
+            </div> <!-- card.// -->
+            
+        </aside> <!-- col.// -->
+    </div> <!-- row.// -->
+    
+</div>
+</div>
+
+<!--container end.//-->
+
+        <!-- Button trigger modal -->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Free Shipping For First Purchase</h5>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            
+          </button>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" action='' method="POST">
+                <fieldset>
+                  <div id="legend">
+                    <legend class=""></legend>
+                  </div>
+                  <div class="control-group">
+                    <!-- Username -->
+                    <label class="control-label"  for="username">Name</label>
+                    <div class="controls">
+                      <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                      <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">E-mail</label>
+                    <div class="controls">
+                      <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+                      <p class="help-block">Please provide your E-mail</p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <!-- Password-->
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                      <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                      <p class="help-block">Password should be at least 4 characters</p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <!-- Password -->
+                    <label class="control-label"  for="password_confirm">Re-enter Password</label>
+                    <div class="controls">
+                      <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+                      <p class="help-block">Please confirm password</p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <!-- Button -->
+                    
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+        <div class="modal-footer">
+        
+          <button type="button" class="btn btn-primary">Create account to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="styles/style.css" />
+  </body>
+</html>
+
+
+
+
+
+
+
+

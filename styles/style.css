@@ -1,0 +1,27 @@
+img {
+    width: 50px;
+
+}
+
+#inside {
+    padding: 5vw;
+}
+
+#nav-bar{
+    top: 0;
+    background-color: #3C7C89;
+    
+}
+
+#nav-bar a{
+    color: white;
+}
+
+#phone-number {
+    display: block;
+    font: 1rem ‘Fira Sans’, sans-serif;
+}
+input,
+#phone-number {
+    margin: .4rem 0;
+}
