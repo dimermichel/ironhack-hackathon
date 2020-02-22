@@ -11,9 +11,11 @@ img {
 }
 
 #nav-bar{
-    top: 0;
-    background-color: #3C7C89;
-    
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+         top: 0;
+         background-color: #3C7C89; 
 }
 
 #nav-bar a{
