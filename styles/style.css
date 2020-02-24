@@ -8,6 +8,10 @@ p {
     margin-bottom: 1rem;
 }
 
+.modal.fade {
+    z-index: 10000000 !important;
+}
+
 #inside {
 	justify-content: space-around;
     padding: 10vh 2vw;
