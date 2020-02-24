@@ -3,11 +3,14 @@ img {
 
 }
 
+p {
+    margin-top: 1vh;
+    margin-bottom: 1rem;
+}
+
 #inside {
-
 	justify-content: space-around;
-
-    padding: 5vw;
+    padding: 10vh 2vw;
 }
 
 #nav-bar{
@@ -44,4 +47,17 @@ input,
 
     width: 100px;
 
+}
+
+.list-group-item {
+    border: none;
+}
+
+#wrapper {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 }
