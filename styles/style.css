@@ -14,11 +14,13 @@ p {
 }
 
 #nav-bar{
+        z-index: 9999;
         position: fixed;
         width: 100%;
         padding: 10px;
-         top: 0;
-         background-color: #3C7C89; 
+        top: 0;
+        background-color: #3C7C89;
+        margin-bottom: 1vh;
 }
 
 #nav-bar a{
